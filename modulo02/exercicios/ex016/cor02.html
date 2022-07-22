@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em css</title>
+    <style>
+        *{ /*Configuraçoes globais das css */
+            height: 100%;
+        }
+        body{
+            /*
+            LINEARES
+            linear-gradiant = degrade em linear
+            (to [direçao]) = definir direçao do degrade
+            (45deg) = definir o grau do degrade 
+
+            CIRCULAR
+            radial-gradient = degrade circular
+            */
+
+            background-image: linear-gradient(to right, #27A2E6 1%, #8542B4, #BF328C, #E03767, #FDCB69);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture><!--<picture> significa: vou jogar uma imagem aqui-->
+        <!--Se a tela for menor que 750 pixel vou carregar essa foto abaixo-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzingo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio preload="metadata" controls loop> 
+        <!--[preload]'auto' ele vai carregar o audio inteiro junto com o site-->
+        <!--[preload]'metadata' vai carregar apenas informações do áudio-->
+        <!--[preload]'none' só vai carregar algo quando clicar no play-->
+
+        <!--'autoplay' vai iniciar o áudio quando carregar o site-->
+        <!--'controls' vai mostrar os controles do áudio-->
+        <!--'loop' vai repetir o áudio quando acabar-->
+        <source src="midia/Contrast - Anno Domini Beats.mp3" type="audio/mpeg">
+        <source src="midia/Contrast - Anno Domini Beats.ogg" type="audio/ogg">
+        <source src="midia/Contrast - Anno Domini Beats.wav" type="audio/wav"> <!--Evitar arquivo wav por ser muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Contrast - Anno Domini Beats.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
