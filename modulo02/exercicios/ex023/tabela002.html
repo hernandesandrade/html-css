@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            /* tabela fixa (1) */
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /* Titulo da tabela */
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        /* Cabeça e roda-pé */
+        thead, tfoot {
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+
+        /* tabela fixa (2) */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(51, 51, 51);
+        }
+
+        /* EFEITO ZEBRADO IMPAR */
+        tbody > tr:nth-child(odd) { /* 2n -1 */
+            background-color: white;
+        }
+
+        /* EFEITO ZEBRADO PAR */
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+        
+        /* VALORES COM CLASSE 'NUM' */
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">9.345.269</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">9.782.325</td>
+            </tr>
+            <tr>
+                <td>Amazônia</td>
+                <td class="num">7.692.154</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, quaerat ipsa eius harum nisi neque voluptatibus unde iure vel saepe doloremque. Maiores, optio laborum porro ad odit nam nisi eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ducimus est nemo alias eveniet quisquam, dolorem iure voluptates id eius soluta, ullam facere reprehenderit deserunt temporibus repellendus rerum dolorum. Unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint odio vitae asperiores incidunt consectetur placeat nesciunt, aspernatur distinctio, veniam adipisci dolores deleniti unde qui ipsum praesentium, perferendis doloremque? Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt similique fuga temporibus fugiat veritatis ea placeat rem atque, nostrum sit inventore quia omnis impedit nihil? In reiciendis ratione recusandae!</p>
+
+</body>
+</html>
