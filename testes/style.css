@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #DDDDDD;
+    --cor2: #cccccc;;
+    --cor3: #1398be;
+    --cor4: #003366;
+    --cor5: #de9800;
+    --cor6: #c91b04;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--cor1);
+    margin: auto;
+    margin-top: 50px;
+}
+
+td, th {
+    padding: 5px;
+}
+
+
+
+
+
+
+thead {
+    font-size: 13px;
+    color: #999999;
+}
+
+
+tbody {
+    text-align: center;
+}
+
+tbody tr {
+    border: 1px solid var(--cor1);
+}
+
+tbody th {
+    font-size: 18px;
+}
+
+tbody td.time {
+    font-size: 14px;
+    color: #666666;
+    font-weight: bolder;
+    text-align: left;
+}
+
+tr.linha {
+    border-bottom: 2px solid #cccccc;
+}
+
+th.I{
+    color: var(--cor4);
+}
+
+th.II{
+    color: var(--cor3);
+}
+
+th.III{
+    color: var(--cor5);
+}
+
+th.IV{
+    color: var(--cor2);
+}
+
+th.V{
+    color: var(--cor6
+    );
+}
+
+tbody > tr > td {
+    font-size: 14px;
+    color: #666666;
+    width: 35px;
+}   
+
+td.pts {
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+td.time {
+    width: 180px;
+}
+
+tfoot {
+    border: 1px solid var(--cor1);
+}
+
+tfoot td.sig {
+    font-size: 10px;
+    color: #555555;
+}
+
+tfoot td {
+    font-size: 10px;
+    color: #8f8f8f;
+}
+
+strong {
+    font-size: 10px;
+    color: #555555;
+    font-weight: bolder;
+    text-shadow: 0.5px 0.5px 1px #f7f7f7;
+}
+
+
+
